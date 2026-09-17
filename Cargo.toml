@@ -1,0 +1,15 @@
+[package]
+name = "portopsy"
+version = "0.1.0"
+edition = "2021"
+description = "Explain what is occupying a TCP or UDP port on Linux"
+license = "MIT"
+readme = "README.md"
+keywords = ["linux", "networking", "cli", "debugging", "devtools"]
+categories = ["command-line-utilities", "network-programming"]
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
